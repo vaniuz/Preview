@@ -124,7 +124,9 @@ def build_all() -> None:
         fmts = ("webp",) if w != 1440 else ("webp", "avif")
         render(desk, None, (w, h), f"hero-{w}", fmts)
     render(desk, None, (1440, 810), "hero", ("jpeg",))
-    render(sorriso.crop((1080, 0, 1944, 1536)), None, (1080, 1920), "hero-mobile", ("jpg", "webp"))
+    mobile = source("hero-mobile-orig.jpg")               # 1536x2752 retrato — enquadramento próprio p/ mobile
+    render(ImageOps.fit(mobile, (1080, 1920), Image.LANCZOS, centering=(0.5, 0.42)),
+           None, None, "hero-mobile", ("jpg", "webp"))
 
     print("● doutores / dupla")
     dupla_coats = source("dupla-black-coats.jpg")           # dupla sorrindo + gradiente do site já aplicado
