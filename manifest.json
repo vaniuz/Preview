@@ -1,0 +1,21 @@
+{
+  "name": "LAVIC Odontologia",
+  "short_name": "LAVIC",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#C9A560",
+  "description": "LAVIC Odontologia — Vila Leopoldina, São Paulo. Nota 5,0 no Google.",
+  "icons": [
+    {
+      "src": "assets/images/favicon-clear-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/favicon-clear-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

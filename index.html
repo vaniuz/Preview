@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="pt-BR" style="margin:0;padding:0;">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LAVIC Odontologia — Clínica odontológica com nota 5,0 no Google</title>
+<meta name="description" content="LAVIC Odontologia: clínica geral, limpeza, clareamento, alinhadores, lentes de contato dental e tratamento de DTM e bruxismo. Avaliação 5,0 em 19 avaliações no Google. Agende sua avaliação pelo WhatsApp.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="LAVIC Odontologia">
+<meta name="theme-color" content="#C9A560">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="LAVIC Odontologia — Clínica odontológica com nota 5,0 no Google">
+<meta property="og:description" content="Tratamentos completos para o seu sorriso, com atendimento atencioso e transparente. 5,0 em 19 avaliações no Google.">
+<!-- TODO deploy: adicionar og:url, og:image e canonical com o domínio final -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="LAVIC Odontologia">
+<meta name="twitter:description" content="Clínica odontológica com nota 5,0 no Google. Agende sua avaliação.">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-clear-32.png?v=3">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-clear-16.png?v=3">
+<link rel="shortcut icon" href="assets/images/favicon-clear.ico?v=3">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon-clear-180.png?v=3">
+<link rel="manifest" href="manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<link rel="preload" as="style" href="assets/css/styles.css" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="assets/css/styles.css"></noscript>
+<link rel="preload" as="image" fetchpriority="high" href="assets/images/hero-1440.webp" type="image/webp" imagesrcset="assets/images/hero-480.webp 480w, assets/images/hero-960.webp 960w, assets/images/hero-1440.webp 1440w, assets/images/hero-1920.webp 1920w" imagesizes="100vw">
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js" defer></script>
+<!-- Critical CSS — primeira viewport (hero + navbar) -->
+<style>:root{--primary:#C9A560;--primary-dark:#A8843F}*{box-sizing:border-box}body{margin:0;font-family:'Manrope',sans-serif;overflow-x:hidden;-webkit-font-smoothing:antialiased}img{max-width:100%;height:auto;display:block}a{color:inherit;text-decoration:none}#navbar{position:fixed;top:0;left:0;right:0;z-index:1000;padding:20px 0;transition:background .4s ease}.nav-scrolled{background:rgba(255,255,255,.95)!important;backdrop-filter:blur(20px);box-shadow:0 4px 30px rgba(0,0,0,.08)}.hero-bg{background-size:cover;background-position:center;position:relative}#home.hero-bg::before{display:none}.hero-card{margin:0;border-radius:28px;overflow:hidden}@media (max-width:767px){.hero-card{margin:0;border-radius:20px}}.hero-media{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:0}.btn-primary{background:var(--primary);color:#fff;padding:14px 32px;border-radius:50px;font-weight:600;border:none;cursor:pointer;transition:all .3s ease;display:inline-flex;align-items:center;gap:8px;font-family:'Manrope',sans-serif;font-size:15px}.btn-secondary{background:#fff;color:var(--text);padding:14px 32px;border-radius:50px;font-weight:600;border:1px solid rgba(18,18,22,.08);cursor:pointer;transition:all .3s ease;display:inline-flex;align-items:center;gap:8px;font-family:'Manrope',sans-serif;font-size:15px}a.nav-link{color:rgba(255,255,255,.8);text-decoration:none;font-weight:500;font-size:14px;transition:color .2s}a.nav-link.active{color:#fff;font-weight:600}#home{height:100vh;height:100svh;min-height:0;padding:100px 32px 40px}@media (max-width:767px){#home{height:100vh;height:100svh;padding:90px 24px 24px;min-height:0}}</style>
+<style>
+/* Hero: foto clínica com overlay escuro; texto branco para legibilidade. */
+#home .hero-reveal{color:#fff!important;text-shadow:0 2px 20px rgba(0,0,0,.35)}
+#home p.hero-reveal{color:rgba(255,255,255,.85)!important}
+.hero-tint{opacity:1!important;visibility:visible!important;background:linear-gradient(90deg,rgba(8,10,14,.78) 0%,rgba(8,10,14,.55) 36%,rgba(8,10,14,.18) 62%,rgba(8,10,14,0) 82%)}
+@media (max-width:767px){.hero-tint{background:linear-gradient(to top,rgba(8,10,14,.82) 0%,rgba(8,10,14,.45) 45%,rgba(8,10,14,.05) 70%,rgba(8,10,14,0) 85%)}}
+#navbar:not(.nav-scrolled) .nav-link{color:rgba(255,255,255,.82)}
+#navbar:not(.nav-scrolled) .nav-link.active{color:#fff}
+#navbar #nav-logo{color:#fff!important}
+#navbar .nav-toggle span{background:#fff}
+body.menu-open #navbar #nav-logo{color:#fff!important}
+#heroHeadline .swap{display:inline-block;transition:opacity .4s ease,transform .4s ease}
+#heroHeadline.swapping .swap{opacity:0;transform:translateY(14px)}
+@media (max-width:767px){.hero-cta{flex-wrap:nowrap!important;gap:10px!important;width:100%}.hero-cta .btn-primary{flex:1.35;padding:16px 14px;font-size:14px;justify-content:center;white-space:nowrap}.hero-cta .btn-secondary{flex:1;padding:16px 14px;font-size:14px;justify-content:center;white-space:nowrap}}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  "name": "LAVIC Odontologia",
+  "description": "Clínica odontológica: clínica geral, limpeza, restaurações, clareamento, alinhadores, lentes de contato dental e tratamento de DTM e bruxismo.",
+  "url": "https://www.google.com/maps/search/?api=1\u0026query=LAVIC+Odontologia",
+  "telephone": "+55-11-94068-9803",
+  "address": {"@type": "PostalAddress", "streetAddress": "Av. Imperatriz Leopoldina, 957 - Sala 1205", "addressLocality": "S\u00e3o Paulo", "addressRegion": "SP", "postalCode": "05305-001", "addressCountry": "BR"},
+  "image": "assets/images/hero.jpeg",
+  "priceRange": "$$",
+  "sameAs": ["https://www.instagram.com/lavicodontologia"],
+  "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "19", "bestRating": "5"},
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "18:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "14:00"}
+  ],
+  "employee": [
+    {"@type": "Person", "name": "Dr. Matheus Ferreira", "jobTitle": "Cirurgião-Dentista"},
+    {"@type": "Person", "name": "Dra. Ana Izabelly", "jobTitle": "Cirurgiã-Dentista"}
+  ]
+}
+</script>
+</head>
+<body>
+<a href="#home" class="skip-link">Ir para o conteúdo</a>
+<div id="app">
+
+<!-- ===== NAVBAR ===== -->
+<nav id="navbar" style="position:fixed;top:0;left:0;right:0;z-index:1000;transition:all .4s ease;background:transparent;padding:20px 0;">
+  <div style="max-width:1280px;margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:space-between;gap:20px;">
+    <a href="#home" style="display:flex;align-items:center;gap:14px;">
+      <img src="assets/images/logo-natural-256.webp" srcset="assets/images/logo-natural-256.webp 1x, assets/images/logo-natural-512.webp 2x" alt="Logo LAVIC Odontologia" style="height:56px;width:auto;flex-shrink:0;" onerror="this.onerror=null;this.src='assets/images/logo-natural.png'">
+      <span style="font-weight:800;font-size:20px;color:#fff;" id="nav-logo">LAVIC Odontologia</span>
+    </a>
+    <div style="display:flex;align-items:center;gap:36px;" id="nav-menu">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">Sobre</a>
+      <a href="#services" class="nav-link">Tratamentos</a>
+      <a href="#doctor" class="nav-link">Doutores</a>
+      <a href="#dicas" class="nav-link">Dicas</a>
+      <a href="#faq" class="nav-link">FAQ</a>
+    </div>
+    <a class="btn-primary" href="https://wa.me/5511940689803?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20na%20LAVIC%20Odontologia." target="_blank" rel="noopener" id="nav-btn">Agendar avaliação</a>
+    <button id="nav-toggle" class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ===== MENU MOBILE ===== -->
+<div id="mobile-menu" class="mobile-menu">
+  <a href="#home" class="active">Home</a>
+  <a href="#about">Sobre</a>
+  <a href="#services">Tratamentos</a>
+  <a href="#doctor">Doutores</a>
+  <a href="#dicas">Dicas</a>
+  <a href="#faq">FAQ</a>
+  <a class="btn-primary mm-cta" href="https://wa.me/5511940689803?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20na%20LAVIC%20Odontologia." target="_blank" rel="noopener">Agendar avaliação</a>
+</div>
+
+<!-- ===== HERO (início) ===== -->
+<section id="home" class="hero-bg hero-card" style="position:relative;display:flex;align-items:center;">
+  <picture>
+    <source media="(max-width:767px)" type="image/webp" srcset="assets/images/hero-mobile.webp">
+    <source media="(max-width:767px)" type="image/jpeg" srcset="assets/images/hero-mobile.jpg">
+    <source type="image/avif" srcset="assets/images/hero-1440.avif 1440w">
+    <img src="assets/images/hero-1440.webp" srcset="assets/images/hero-480.webp 480w, assets/images/hero-960.webp 960w, assets/images/hero-1440.webp 1440w, assets/images/hero-1920.webp 1920w" sizes="100vw" alt="Paciente sorrindo durante avaliação com espelho bucal na LAVIC Odontologia" class="hero-media" width="1920" height="1080" fetchpriority="high" decoding="async" onerror="this.onerror=null;this.src='assets/images/hero.jpeg';this.srcset='';">
+  </picture>
+  <img src="assets/images/hero-1440.webp" alt="" aria-hidden="true" class="hero-blur" decoding="async">
+  <div class="hero-tint" aria-hidden="true"></div>
+  <div style="max-width:1280px;margin:0 auto;width:100%;position:relative;z-index:2;">
+    <div class="hero-reveal" style="display:inline-flex;align-items:center;gap:12px;margin-bottom:28px;color:#fff;">
+      <span style="display:inline-flex;align-items:center;">
+        <img src="assets/images/avatar-paciente-1.jpg" alt="Paciente da LAVIC" style="width:30px;height:30px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,.9);" loading="lazy" decoding="async">
+        <img src="assets/images/avatar-paciente-2.jpg" alt="Paciente da LAVIC" style="width:30px;height:30px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,.9);margin-left:-10px;" loading="lazy" decoding="async">
+        <img src="assets/images/avatar-paciente-3.jpg" alt="Paciente da LAVIC" style="width:30px;height:30px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,.9);margin-left:-10px;" loading="lazy" decoding="async">
+      </span>
+      <span style="font-size:14px;font-weight:600;">5,0 · 19 avaliações no Google</span>
+    </div>
+    <h1 class="hero-reveal" id="heroHeadline" aria-live="polite" style="font-size:clamp(38px,5.8vw,68px);line-height:1.06;margin:0 0 24px;color:#fff;max-width:860px;font-weight:800;letter-spacing:-0.02em;">
+      <span id="heroTop" class="swap" style="font-family:'Manrope',sans-serif;">Seu sorriso</span><br>
+      <em id="heroBottom" class="swap" style="font-family:'Playfair Display',serif;font-weight:500;font-size:1.03em;letter-spacing:0;">em boas mãos.</em>
+    </h1>
+    <p class="hero-reveal" style="font-size:clamp(16px,2vw,19px);line-height:1.7;color:rgba(255,255,255,.85);max-width:600px;margin:0 0 40px;">
+      Clínica geral, limpeza, clareamento, alinhadores, lentes de contato dental e tratamento de DTM e bruxismo. Cada etapa é explicada com clareza, do agendamento ao acompanhamento.
+    </p>
+    <div class="hero-reveal hero-cta" style="display:flex;gap:14px;flex-wrap:wrap;align-items:center;">
+      <a class="btn-primary" href="https://wa.me/5511940689803?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20na%20LAVIC%20Odontologia." target="_blank" rel="noopener">
+        Agendar avaliação
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a class="btn-secondary" href="#services" style="background:#fff;color:var(--text);border:none;">Ver tratamentos</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SOBRE ===== -->
+<section id="about" style="padding:100px 32px;background:#fff;position:relative;overflow:hidden;">
+  <div style="max-width:1280px;margin:0 auto;">
+    <div class="reveal" style="text-align:center;max-width:800px;margin:0 auto 80px;position:relative;">
+      <div class="img-tilt-container" style="position:absolute;left:-210px;top:20px;width:180px;height:140px;" data-tilt="left">
+        <img src="assets/images/sobre-1.webp" class="img-tilt-left" style="width:100%;height:100%;object-fit:cover;" alt="Recepção da LAVIC Odontologia" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/images/sobre-1.jpg'">
+      </div>
+      <div class="img-tilt-container" style="position:absolute;right:-210px;bottom:-20px;width:180px;height:140px;" data-tilt="right">
+        <img src="assets/images/sobre-2.webp" class="img-tilt-right" style="width:100%;height:100%;object-fit:cover;" alt="Equipamentos da LAVIC Odontologia" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/images/sobre-2.jpg'">
+      </div>
+      <p style="font-size:12px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-muted);margin-bottom:16px;font-weight:600;">
+        <span style="display:inline-block;width:6px;height:6px;background:var(--primary);border-radius:50%;margin-right:8px;vertical-align:middle;"></span>
+        Sobre a LAVIC Odontologia
+      </p>
+      <h2 style="font-size:clamp(22px,3vw,32px);font-weight:600;line-height:1.4;margin:0;color:var(--text);">
+        Do agendamento ao pós-tratamento, tudo é explicado com <strong>clareza e honestidade</strong> — para que você se sinta seguro em cada decisão sobre o seu sorriso.
+      </h2>
+      <div style="margin-top:32px;">
+        <a class="btn-primary" href="https://wa.me/5511940689803?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20a%20LAVIC%20Odontologia." target="_blank" rel="noopener">Falar com a recepção</a>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:40px;">
+      <div class="reveal stat-item" style="text-align:center;">
+        <div class="stat-number"><span class="counter" data-target="5">0</span>,0★</div>
+        <p style="color:var(--text-muted);margin-top:8px;font-size:15px;">Nota no Google</p>
+      </div>
+      <div class="reveal stat-item" style="text-align:center;">
+        <div class="stat-number"><span class="counter" data-target="19">0</span></div>
+        <p style="color:var(--text-muted);margin-top:8px;font-size:15px;">Avaliações de pacientes</p>
+      </div>
+      <div class="reveal stat-item" style="text-align:center;">
+        <div class="stat-number"><span class="counter" data-target="2">0</span></div>
+        <p style="color:var(--text-muted);margin-top:8px;font-size:15px;">Cirurgiões-dentistas</p>
+      </div>
+      <div class="reveal stat-item" style="text-align:center;">
+        <div class="stat-number"><span class="counter" data-target="6">0</span></div>
+        <p style="color:var(--text-muted);margin-top:8px;font-size:15px;">Dias por semana atendendo</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TRATAMENTOS ===== -->
+<section id="services" style="padding:100px 32px;background:var(--bg-alt);position:relative;overflow:hidden;">
+  <div style="max-width:1280px;margin:0 auto;">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:50px;flex-wrap:wrap;gap:24px;">
+      <h2 class="section-title reveal" style="margin:0;">Tratamentos para<br><em>todas as fases do sorriso</em></h2>
+      <a class="btn-primary reveal" href="https://wa.me/5511940689803?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20tratamentos%20da%20LAVIC%20Odontologia." target="_blank" rel="noopener">Tirar dúvidas no WhatsApp</a>
+    </div>
+    <div class="service-track">
+      <div class="service-card reveal">
+        <h3 style="font-size:19px;font-weight:700;margin:0 0 10px;">Clínica Geral</h3>
+        <p style="font-size:15px;line-height:1.7;color:var(--text-muted);margin:0 0 16px;">Consultas de rotina, restaurações, extrações e acompanhamento — do diagnóstico simples ao tratamento completo.</p>
+        <div style="margin-top:20px;border-radius:16px;overflow:hidden;height:180px;">
+          <img src="assets/images/servico-clinica-geral.webp" style="width:100%;height:100%;object-fit:cover;" width="720" height="360" alt="Clínica geral odontológica" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/images/servico-clinica-geral.jpg'">
+        </div>
+      </div>
+      <div class="service-card reveal">
+        <h3 style="font-size:19px;font-weight:700;margin:0 0 10px;">Prevenção e limpeza</h3>
+        <p style="font-size:15px;line-height:1.7;color:var(--text-muted);margin:0 0 16px;">Profilaxia, orientação de higiene e acompanhamento preventivo para evitar problemas antes que apareçam.</p>
+        <div style="margin-top:20px;border-radius:16px;overflow:hidden;height:180px;">
+          <img src="assets/images/servico-prevencao.webp" style="width:100%;height:100%;object-fit:cover;" width="720" height="360" alt="Prevenção e limpeza dental" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/images/servico-prevencao.jpg'">
+        </div>
+      </div>
+      <div class="service-card reveal">
+        <h3 style="font-size:19px;font-weight:700;margin:0 0 10px;">Clareamento dental</h3>
+        <p style="font-size:15px;line-height:1.7;color:var(--text-muted);margin:0 0 16px;">Clareamento com resultado visível, sempre acompanhado por um profissional durante todo o processo.</p>
+        <div style="margin-top:20px;border-radius:16px;overflow:hidden;height:180px;">
+          <img src="assets/images/servico-clareamento.webp" style="width:100%;height:100%;object-fit:cover;" width="720" height="360" alt="Clareamento dental" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/images/servico-clareamento.jpg'">
+        </div>
+      </div>
+      <div class="service-card reveal">
+        <h3 style="font-size:19px;font-weight:700;margin:0 0 10px;">Lentes de contato dental</h3>
+        <p style="font-size:15px;line-height:1.7;color:var(--text-muted);margin:0 0 16px;">Estética do sorriso com planejamento individual, respeitando as proporções do seu rosto.</p>
+        <div style="margin-top:20px;border-radius:16px;overflow:hidden;height:180px;">
+          <img src="assets/images/servico-lentes.webp" style="width:100%;height:100%;object-fit:cover;" width="720" height="360" alt="Lentes de contato dental" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/images/servico-lentes.jpg'">
+        </div>
+      </div>
+      <div class="service-card reveal">
+        <h3 style="font-size:19px;font-weight:700;margin:0 0 10px;">Alinhadores e ortodontia</h3>
+        <p style="font-size:15px;line-height:1.7;color:var(--text-muted);margin:0 0 16px;">Alinhadores transparentes e aparelhos modernos para um sorriso mais harmônico e funcional.</p>
+        <div style="margin-top:20px;border-radius:16px;overflow:hidden;height:180px;">
+          <img src="assets/images/servico-alinhadores.webp" style="width:100%;height:100%;object-fit:cover;" width="720" height="360" alt="Alinhadores e ortodontia" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/images/servico-alinhadores.jpg'">
+        </div>
+      </div>
+      <div class="service-card reveal">
+        <h3 style="font-size:19px;font-weight:700;margin:0 0 10px;">DTM e bruxismo</h3>
+        <p style="font-size:15px;line-height:1.7;color:var(--text-muted);margin:0 0 16px;">Avaliação e tratamento da dor na articulação temporomandibular e do apertamento dos dentes.</p>
+        <div style="margin-top:20px;border-radius:16px;overflow:hidden;height:180px;">
+          <img src="assets/images/servico-dtm.webp" style="width:100%;height:100%;object-fit:cover;" width="720" height="360" alt="Tratamento de DTM e bruxismo" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/images/servico-dtm.jpg'">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DOUTORES (feature) ===== -->
+<section class="doctor-feature" id="doctor">
+  <div class="doctor-rail" aria-hidden="true">
+    <span class="doctor-vline doctor-vline-top"></span>
+    <div class="doctor-socials">
+      <a href="https://www.instagram.com/lavicodontologia" target="_blank" rel="noopener" aria-label="Instagram da LAVIC Odontologia">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a href="https://linktr.ee/matheusferreira.dr" target="_blank" rel="noopener" aria-label="Dr. Matheus Ferreira">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007 0l2-2a5 5 0 00-7-7l-1 1"/><path d="M14 11a5 5 0 00-7 0l-2 2a5 5 0 007 7l1-1"/></svg>
+      </a>
+      <a href="https://wa.me/5511940689803?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20na%20LAVIC%20Odontologia." target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.7 15L2 22l5.2-1.3A10 10 0 1012 2zm0 2a8 8 0 016.6 12.5l-.3.5.7 2.6-2.7-.7-.5.3A8 8 0 1112 4zm-3.1 4c-.2 0-.5.1-.7.4-.3.3-.9 1-.9 2s.7 2 .8 2.2c.1.1 1.4 2.2 3.4 3.1 1.7.7 2.1.6 2.5.5.4 0 1.3-.5 1.5-1.1.2-.5.2-1 .1-1.1 0-.1-.2-.2-.4-.3l-1.3-.6c-.2-.1-.4-.1-.5.1l-.6.7c-.1.2-.3.2-.4.1-.2-.1-.8-.3-1.5-.9-.6-.5-1-1.2-1.1-1.4-.1-.2 0-.3.1-.4l.4-.5c.1-.2.1-.3 0-.5l-.6-1.4c-.2-.4-.3-.3-.5-.3h-.4z"/></svg>
+      </a>
+    </div>
+    <span class="doctor-vline doctor-vline-bottom"></span>
+  </div>
+
+  <div class="doctor-content">
+    <p class="doctor-subtitle reveal">Corpo clínico</p>
+    <h2 class="doctor-title reveal">Matheus &amp;<br>Ana Izabelly<span class="doctor-dot"></span></h2>
+    <p class="doctor-desc reveal">
+      Dr. Matheus Ferreira e Dra. Ana Izabelly atendem na LAVIC com foco em clínica geral, estética, alinhadores e DTM. Cada procedimento é explicado com paciência e transparência, do diagnóstico ao pós-tratamento.
+    </p>
+  </div>
+
+  <div class="doctor-img">
+    <picture>
+      <source type="image/avif" srcset="assets/images/dupla.avif">
+      <img src="assets/images/dupla.webp" srcset="assets/images/dupla-480.webp 480w, assets/images/dupla.webp 960w" sizes="(min-width:1024px) 47vw, 100vw" alt="Dr. Matheus Ferreira e Dra. Ana Izabelly, da LAVIC Odontologia" width="960" height="1280" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/images/dupla.jpg';this.srcset='';">
+    </picture>
+  </div>
+
+  <a class="doctor-handle" href="https://www.instagram.com/lavicodontologia" target="_blank" rel="noopener">@lavicodontologia</a>
+</section>
+
+<!-- ===== EQUIPE ===== -->
+<section id="equipe" style="padding:100px 32px;background:#fff;">
+  <div style="max-width:1280px;margin:0 auto;">
+    <div style="text-align:center;max-width:720px;margin:0 auto 50px;">
+      <h2 class="section-title reveal" style="margin:0;">Quem cuida do<br><em>seu sorriso</em></h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px;">
+      <div class="team-card reveal" style="border:1px solid var(--border);border-radius:20px;overflow:hidden;background:#fff;max-width:420px;margin:0 auto;width:100%;">
+        <div style="aspect-ratio:3/4;overflow:hidden;">
+          <img src="assets/images/time-matheus.webp" style="width:100%;height:100%;object-fit:cover;display:block;object-position:top center;" width="900" height="1200" alt="Dr. Matheus Ferreira" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/images/time-matheus.jpg'">
+        </div>
+        <div style="padding:20px 22px 24px;">
+          <h3 style="font-size:18px;font-weight:700;margin:0 0 6px;">Dr. Matheus Ferreira</h3>
+          <p style="font-size:14px;color:var(--text-muted);margin:0;">Cirurgião-dentista · avaliação, limpeza e DTM</p>
+        </div>
+      </div>
+      <div class="team-card reveal" style="border:1px solid var(--border);border-radius:20px;overflow:hidden;background:#fff;max-width:420px;margin:0 auto;width:100%;">
+        <div style="aspect-ratio:3/4;overflow:hidden;">
+          <img src="assets/images/time-ana.webp" style="width:100%;height:100%;object-fit:cover;display:block;object-position:top center;" width="900" height="1200" alt="Dra. Ana Izabelly" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/images/time-ana.jpg'">
+        </div>
+        <div style="padding:20px 22px 24px;">
+          <h3 style="font-size:18px;font-weight:700;margin:0 0 6px;">Dra. Ana Izabelly</h3>
+          <p style="font-size:14px;color:var(--text-muted);margin:0;">Cirurgiã-dentista · limpeza e clareamento</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DEPOIMENTOS ===== -->
+<section id="depoimentos" style="padding:100px 32px;background:var(--bg-alt);">
+  <div style="max-width:1280px;margin:0 auto;">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:50px;flex-wrap:wrap;gap:24px;">
+      <h2 class="section-title reveal" style="margin:0;">A experiência de<br><em>quem confia</em></h2>
+    </div>
+    <div class="edu-testimonial reveal" id="testimonialRoot">
+      <div class="edu-main">
+        <span class="edu-index" id="tIndex">01</span>
+        <div class="edu-content">
+          <div class="edu-stars" id="tStars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+          <blockquote class="edu-quote" id="tQuote">Excelente experiência na LAVIC Odontologia!</blockquote>
+          <div class="edu-author" id="tAuthor">
+            <div class="edu-avatar" id="tAvatar">F</div>
+            <div>
+              <p class="edu-name" id="tName">Fernanda Comunale</p>
+              <span id="tRole">1 avaliação</span><span class="edu-sep">·</span><span class="edu-co" id="tMeta">há 3 meses · Avaliação Google</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="edu-nav">
+        <div class="edu-nav-left">
+          <div class="edu-lines" id="tLines"></div>
+          <span class="edu-counter" id="tCounter">01 / 05</span>
+        </div>
+        <div class="edu-arrows">
+          <button class="edu-arrow" type="button" onclick="moveTestimonial(-1)" aria-label="Depoimento anterior">‹</button>
+          <button class="edu-arrow" type="button" onclick="moveTestimonial(1)" aria-label="Próximo depoimento">›</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section id="faq" style="padding:100px 32px;background:#fff;">
+  <div style="max-width:900px;margin:0 auto;">
+    <h2 class="section-title reveal" style="text-align:center;margin-bottom:50px;">Dúvidas<br><em>frequentes</em></h2>
+    <div style="display:flex;flex-direction:column;gap:16px;">
+      <div class="faq-item reveal active" role="button" tabindex="0">
+        <div class="faq-q">
+          <h3>1. Onde fica a clínica?</h3>
+          <span class="faq-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg></span>
+        </div>
+        <div class="faq-answer"><p class="faq-a">A LAVIC Odontologia atende em consultório próprio. Toque em “Ver no Google Maps” para abrir a rota no celular — e, se preferir, fale com a Gabrielly pelo WhatsApp que enviamos a localização.</p></div>
+      </div>
+      <div class="faq-item reveal" role="button" tabindex="0">
+        <div class="faq-q">
+          <h3>2. Como faço para agendar uma consulta?</h3>
+          <span class="faq-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span>
+        </div>
+        <div class="faq-answer"><p class="faq-a">É simples: chame no WhatsApp, mande mensagem no Instagram <strong>@lavicodontologia</strong> ou fale direto na recepção. Confirmamos o melhor horário e explicamos o que levar na primeira consulta.</p></div>
+      </div>
+      <div class="faq-item reveal" role="button" tabindex="0">
+        <div class="faq-q">
+          <h3>3. Quais tratamentos vocês oferecem?</h3>
+          <span class="faq-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span>
+        </div>
+        <div class="faq-answer"><p class="faq-a">Clínica geral, limpeza e prevenção, restaurações, extrações, clareamento dental, lentes de contato dental, alinhadores e ortodontia, além de avaliação e tratamento de DTM e bruxismo.</p></div>
+      </div>
+      <div class="faq-item reveal" role="button" tabindex="0">
+        <div class="faq-q">
+          <h3>4. Vocês atendem convênios?</h3>
+          <span class="faq-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span>
+        </div>
+        <div class="faq-answer"><p class="faq-a">Sim. Auxiliamos em todo o processo do convênio, do agendamento ao suporte com as autorizações e a documentação — é só trazer as informações do seu plano.</p></div>
+      </div>
+      <div class="faq-item reveal" role="button" tabindex="0">
+        <div class="faq-q">
+          <h3>5. Qual o horário de funcionamento?</h3>
+          <span class="faq-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span>
+        </div>
+        <div class="faq-answer"><p class="faq-a">Segunda a sexta, das 9h às 18h, e sábado das 9h às 14h. Domingos e feriados não abrimos.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DICAS ===== -->
+<section id="dicas" style="padding:100px 32px;background:var(--bg-alt);">
+  <div style="max-width:1280px;margin:0 auto;">
+    <h2 class="section-title reveal" style="text-align:center;margin-bottom:50px;">Cuidados para<br><em>o seu dia a dia</em></h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;">
+      <div class="blog-card reveal" style="aspect-ratio:3/4;">
+        <img src="assets/images/blog-1.webp" class="blog-cover" alt="Mulher usando fio dental — cuidado diário" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/images/blog-1.jpg'">
+        <picture><source type="image/avif" srcset="assets/images/tip-prevencao.avif"><img src="assets/images/tip-prevencao.webp" class="blog-hover" alt="Prevenção — cuidados diários" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/images/tip-prevencao.jpg'"></picture>
+        <div class="blog-overlay">
+          <p style="font-size:12px;letter-spacing:0.1em;text-transform:uppercase;opacity:0.8;margin:0 0 8px;">Prevenção</p>
+          <h3 style="font-size:18px;font-weight:700;margin:0 0 12px;line-height:1.3;">5 cuidados diários para manter o sorriso saudável</h3>
+          <div style="display:flex;align-items:center;justify-content:space-between;">
+            <span style="font-size:12px;opacity:0.7;">Dica da LAVIC</span>
+            <div style="width:32px;height:32px;border-radius:50%;background:var(--primary);display:flex;align-items:center;justify-content:center;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="blog-card reveal" style="aspect-ratio:3/4;">
+        <img src="assets/images/blog-2.webp" class="blog-cover" alt="Sorriso branco após clareamento dental" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/images/blog-2.jpg'">
+        <picture><source type="image/avif" srcset="assets/images/tip-clareamento.avif"><img src="assets/images/tip-clareamento.webp" class="blog-hover" alt="Dentista aplicando gel clareador nos dentes" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/images/tip-clareamento.jpg'"></picture>
+        <div class="blog-overlay">
+          <p style="font-size:12px;letter-spacing:0.1em;text-transform:uppercase;opacity:0.8;margin:0 0 8px;">Estética</p>
+          <h3 style="font-size:18px;font-weight:700;margin:0 0 12px;line-height:1.3;">Clareamento dental: o que esperar antes e depois</h3>
+          <div style="display:flex;align-items:center;justify-content:space-between;">
+            <span style="font-size:12px;opacity:0.7;">Dica da LAVIC</span>
+            <div style="width:32px;height:32px;border-radius:50%;background:var(--primary);display:flex;align-items:center;justify-content:center;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="blog-card reveal" style="aspect-ratio:3/4;">
+        <img src="assets/images/blog-3.webp" class="blog-cover" alt="Sorriso com aparelho ortodôntico" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/images/blog-3.jpg'">
+        <picture><source type="image/avif" srcset="assets/images/tip-alinhadores.avif"><img src="assets/images/tip-alinhadores.webp" class="blog-hover" alt="Prova de alinhador transparente no sorriso" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/images/tip-alinhadores.jpg'"></picture>
+        <div class="blog-overlay">
+          <p style="font-size:12px;letter-spacing:0.1em;text-transform:uppercase;opacity:0.8;margin:0 0 8px;">Ortodontia</p>
+          <h3 style="font-size:18px;font-weight:700;margin:0 0 12px;line-height:1.3;">Alinhadores: como funcionam e para quem indicam</h3>
+          <div style="display:flex;align-items:center;justify-content:space-between;">
+            <span style="font-size:12px;opacity:0.7;">Dica da LAVIC</span>
+            <div style="width:32px;height:32px;border-radius:50%;background:var(--primary);display:flex;align-items:center;justify-content:center;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== RODAPÉ ===== -->
+<footer style="background:var(--footer);color:#fff;padding:90px 32px 40px;">
+  <div style="max-width:1280px;margin:0 auto;">
+    <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:40px;flex-wrap:wrap;margin-bottom:60px;">
+      <div class="reveal" style="max-width:560px;">
+        <img src="assets/images/logo-natural-256.webp" srcset="assets/images/logo-natural-256.webp 1x, assets/images/logo-natural-512.webp 2x" alt="Logo LAVIC Odontologia" style="height:96px;width:auto;" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/images/logo-natural.png'">
+        <h2 style="font-size:clamp(32px,4vw,52px);font-weight:700;line-height:1.1;margin:24px 0 16px;">Vamos cuidar do<br><em style="font-family:'Playfair Display',serif;font-style:italic;font-weight:500;">seu sorriso?</em></h2>
+        <p style="color:var(--footer-text);font-size:14px;max-width:380px;margin:0 0 24px;">Agende sua avaliação e dê o primeiro passo para um sorriso mais saudável e confiante.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <a class="btn-primary" href="https://wa.me/5511940689803?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20na%20LAVIC%20Odontologia." target="_blank" rel="noopener" style="padding:14px 24px;">Falar no WhatsApp</a>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:40px;margin-bottom:50px;">
+      <div class="reveal">
+        <h4 style="font-size:13px;letter-spacing:0.1em;text-transform:uppercase;color:var(--footer-text);margin-bottom:20px;font-weight:700;">Navegação</h4>
+        <a href="#home" class="footer-link">Home</a>
+        <a href="#about" class="footer-link">Sobre</a>
+        <a href="#services" class="footer-link">Tratamentos</a>
+        <a href="#doctor" class="footer-link">Doutores</a>
+        <a href="#faq" class="footer-link">FAQ</a>
+      </div>
+      <div class="reveal">
+        <h4 style="font-size:13px;letter-spacing:0.1em;text-transform:uppercase;color:var(--footer-text);margin-bottom:20px;font-weight:700;">Tratamentos</h4>
+        <a href="#services" class="footer-link">Clínica Geral</a>
+        <a href="#services" class="footer-link">Prevenção e limpeza</a>
+        <a href="#services" class="footer-link">Clareamento</a>
+        <a href="#services" class="footer-link">Alinhadores</a>
+        <a href="#services" class="footer-link">Lentes de contato</a>
+        <a href="#services" class="footer-link">DTM e bruxismo</a>
+      </div>
+      <div class="reveal">
+        <h4 style="font-size:13px;letter-spacing:0.1em;text-transform:uppercase;color:var(--footer-text);margin-bottom:20px;font-weight:700;">Horário</h4>
+        <span class="footer-link">Seg a Sex — 9h às 18h</span>
+        <span class="footer-link">Sábado — 9h às 14h</span>
+        <span class="footer-link">Domingo — fechado</span>
+      </div>
+      <div class="reveal">
+        <h4 style="font-size:13px;letter-spacing:0.1em;text-transform:uppercase;color:var(--footer-text);margin-bottom:20px;font-weight:700;">Contato</h4>
+        <a href="https://wa.me/5511940689803" target="_blank" rel="noopener" class="footer-link">WhatsApp</a>
+        <a href="https://www.instagram.com/lavicodontologia" target="_blank" rel="noopener" class="footer-link">@lavicodontologia</a>
+        <a href="https://linktr.ee/matheusferreira.dr" target="_blank" rel="noopener" class="footer-link">Dr. Matheus Ferreira</a>
+      </div>
+      <div class="reveal">
+        <h4 style="font-size:13px;letter-spacing:0.1em;text-transform:uppercase;color:var(--footer-text);margin-bottom:20px;font-weight:700;">Localização</h4>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=LAVIC+Odontologia" target="_blank" rel="noopener" class="footer-link">Ver no Google Maps</a>
+        <span class="footer-link">5,0 ★ · 19 avaliações</span>
+        <span class="footer-link">Atendimento com convênios</span>
+      </div>
+    </div>
+
+    <div style="display:flex;align-items:center;justify-content:space-between;padding-top:30px;border-top:1px solid rgba(255,255,255,0.05);flex-wrap:wrap;gap:16px;">
+      <p style="color:var(--footer-text);font-size:13px;margin:0;">© 2026 LAVIC Odontologia. Todos os direitos reservados.</p>
+      <div style="display:flex;gap:24px;">
+        <a href="https://www.instagram.com/lavicodontologia" target="_blank" rel="noopener" class="footer-link" style="padding:0;">Instagram</a>
+        <a href="#faq" class="footer-link" style="padding:0;">Convênios</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
+
